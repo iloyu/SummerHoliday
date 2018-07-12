@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-12T12:15:05+08:00
+
+====== 7.12 ======
+创建日期 星期四 12 七月 2018
+
+建立神经网络

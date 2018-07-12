@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-12T10:55:44+08:00
+
+====== Home ======
+创建日期 星期四 12 七月 2018
+
+怎么识别exfat 格式的U盘？
+> sudo apt-get install exfat-fuse
+python环境开启
+ virtualenv --no-site-packages venv
+命令virtualenv就可以创建一个独立的Python运行环境，我们还加上了参数--no-site-packages，这样，已经安装到系统Python环境中的所有第三方包都不会复制过来，这样，我们就得到了一个不带任何第三方包的“干净”的Python运行环境。
+source venv/bin/activate
