@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-18T09:41:08+08:00
+
+====== cf星期三 18 7月 2018 ======
+ ./darknet detect cfg/yolov3-voc.cfg backup/yolov3-voc_900.weights data/test.jpg
+https://blog.csdn.net/lilai619/article/details/79695109
+详细解释了如何yolo 继续训练
+yolo结构以及各项参数
+{{./2018-07-18 10-16-35屏幕截图.png}}

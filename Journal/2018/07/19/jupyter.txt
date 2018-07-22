@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-19T13:56:27+08:00
+
+====== jupyter ======
+创建日期 星期四 19 七月 2018
+直接将.py文件拖拽到Notebook界面中的列表里
+
+ipython notebook
+
+
+
+(2) 利用 %load：
+
+%load test.py
+
+
+
+这种方法可以将自己编写的.py文件原封不动地搬到一个cell里面，自然也往往不是我们想要达到的效果。
+
+(3) 利用 IPython.nbformat.current
+
+import IPython.nbformat.current as nbf
+
+nb = nbf.read(open('test.py', 'r'), 'py')
+
+nbf.write(nb, open('test.ipynb', 'w'), 'ipynb')
+
+
+这样会生成一个名为 test.ipynb 的文件
+
+运行计时
+
+我们可以通过ExecutionTime插件来对每个cell的运行计时。
+
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+jupyter nbextension enable execute_time/ExecuteTime

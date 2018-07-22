@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-19T09:27:24+08:00
+
+====== 星期四 19 7月 2018 ======
+ ./darknet detector train cfg/voc2.data cfg/yolov33.cfg darknet53.conv.74 -gpus 0
+
+给命令取别名
+sudo gedit .bashrc
+[[~/Downloads/MobileNets: Efficient Convolutional Neural Networks for Mobile Vision.pdf|MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+Applications]]
+This paper describes an efficient network architecture  and a set of two hyper-parameters in order to build very small, low latency models that can be easily matched to the  design requirements  for mobile and embedded vision applications.
+
+Many different approaches can be generally categorized into either compressing pretrained networks or training small networks directly.
+
+
+dos格式文件传输到linux系统时,会在每行的结尾多一个^M,当然也有可能看不到，我们可以将dos文件转换为unix文件格式。
+1、转换方法
+vi  dos.txt
+:set fileformat=unix
+:w  
+2、用命令:set ff
+可以看到dos或unix的字样.
+3、set ff=unix把它强制为unix格式的, 然后存盘退出, 即可.
+4、也可以用sed 这样的工具来做:
+sed ‘s/^M//’ filename > tmp_filename
+其中^M是同时Ctrl+V+M按出来的，表示回车。
+5、其它“怪招”：
+a）. 使用vi
+vi dos_file.txt
+:%s/^M//g
+其中^M 必须是同时按 Ctrl+V+M ，表示回车。不是直接输入 ^M ，那没有用的，　:-) 。
+b）. 使用tr
+命令：tr -d “\015” dos_file.txt
+c) 使用perl
+cat dos_file.txt | perl -pe ‘~s/\r//g’ > unix_file.txt
+
+
+

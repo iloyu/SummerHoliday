@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-21T14:27:03+08:00
+
+====== 星期六 21 7月 2018 ======
+**迁移学习**
+狗狗的品种：
+VGG 16 :31%
+Resnet50:80.2632%
+Inception:80.5024%
+
+**Squeezenet**
+
+shuffleNet
+以后若涉及小型网络，可考虑如何提升通道使用效率。
+与 MobileNet 一样采用了 depth-wise convolution，但是针对 depth-wise convolution 带来的副作用——「信息流通不畅」，ShuffleNet 采用了一个 channel shuffle 操作来解决。
+	. 与 MobileNet 一样采用了 depth-wise convolution，但是针对 depth-wise convolution 带来的副作用——「信息流通不畅」，ShuffleNet 采用了一个 channel shuffle 操作来解决。
+
+
+	2. 在网络拓扑方面，ShuffleNet 采用的是 resnet 的思想，而 mobielnet 采用的是 VGG 的思想，2.1 SqueezeNet 也是采用 VGG 的堆叠思想。
+
+Mobilenet

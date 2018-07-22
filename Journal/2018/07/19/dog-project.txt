@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-19T13:39:50+08:00
+
+====== dog-project ======
+创建日期 星期四 19 七月 2018
+
+source activate dog-project
+KERAS_BACKEND=tensorflow python -c "from keras import backend"
+
+jupyter notebook dog_app.ipynb

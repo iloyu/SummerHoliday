@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-14T13:04:31+08:00
+
+====== 星期六 14 7月 2018 ======
+./include/caffe/common.hpp:4:32: fatal error: boost/shared_ptr.hpp: 没有那个文件或目录
+
+**$ sudo apt-get install --no-install-recommends libboost-all-dev**

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-12T13:19:47+08:00
+
+====== 星期四 12 7月 2018 ======
+import tensorflow
+
+
+打开终端并输入：
+
+**sudo gedit ~/.bashrc**
+
+输入用户密码。这时输入的密码是不可见的。
+
+前面的步骤会打开.bashrc文件，在其末尾添加：
+
+**export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"**
+**export CUDA_HOME=/usr/local/cuda**
+
+使其立即生效，在终端执行：
+**source ~/.bashrc**
+**export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/usr/local/cuda-9.0/lib64/**
+建立神经网络

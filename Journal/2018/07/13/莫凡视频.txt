@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-14T12:40:18+08:00
+
+====== 莫凡视频 ======
+创建日期 星期六 14 七月 2018
+学习了如何使用tensorflow搭建自己的神经网络

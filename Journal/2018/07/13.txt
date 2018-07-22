@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-13T10:42:40+08:00
+
+====== 星期五 13 7月 2018 ======
+完成yolov3 示例
+./darknet detect cfg/yolov3.cfg weights/yolov3.weights
+
+yolov3-voc_20000.weights
+
+多张图像测试
+
+./darknet detect cfg/yolov3.cfg weights/yolov3.weights
+
+出现
+
+EnterImage Path:
+
+可以读入多张图像
+
+
+设置阈值输出(阈值为0)
+./darknet detect cfg/yolov3.cfg weights/yolov3.weights data/dog.jpg -thresh 0
+
+摄像头情况下
+
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg weights/yolov3.weights
+
+
+视频demo
+
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg weights/yolov3.weights <video file>
